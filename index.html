@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تطبيق الشهادة السودانية</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>تطبيق الشهادة السودانية</h1>
+    <nav>
+      <button onclick="showSection('exams')">📚 الامتحانات السابقة</button>
+      <button onclick="showSection('predictions')">🔮 التنبؤات</button>
+      <button onclick="showSection('notes')">📖 الشروحات</button>
+      <button onclick="showSection('worksheets')">📝 أوراق العمل</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="exams" class="hidden">
+      <h2>الامتحانات السابقة</h2>
+      <ul id="exam-list"></ul>
+    </section>
+
+    <section id="predictions" class="hidden">
+      <h2>التنبؤات</h2>
+      <ul id="prediction-list"></ul>
+    </section>
+
+    <section id="notes" class="hidden">
+      <h2>الشروحات</h2>
+      <ul id="notes-list"></ul>
+    </section>
+
+    <section id="worksheets" class="hidden">
+      <h2>أوراق العمل</h2>
+      <ul id="worksheets-list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
